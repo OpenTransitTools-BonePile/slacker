@@ -5,9 +5,6 @@ from ott.utils import slack_utils
 
 
 class Bot(object):
-    """ a lot of code borrowed from fullstack article  
-        @see https://www.fullstackpython.com/blog/build-first-slack-bot-python.html
-    """
     def __init__(self):
         super(Bot, self).__init__()
         slack_client = SlackClient(security_keys.SLACK_BOT_TOKEN)
