@@ -38,9 +38,9 @@ class Bot(object):
                 else:
                     sentiment = text_blob.sentiment
                     if sentiment.polarity > 0:
-                        response = "Not sure what '{}' means exactly, but I can tell someone's having a good day.".format(user_input)
+                        response = "I can tell someone's having a good day. Unfortunately, I can't help you with '{}'.".format(user_input)
                     elif sentiment.polarity < 0:
-                        response = "That's not nice...forget it, not even going to try and understand what '{}' means.".format(user_input)
+                        response = "That's not nice...not even going to try and understand what '{}' means.".format(user_input)
 
         return response
 
