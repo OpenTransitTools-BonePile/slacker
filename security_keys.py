@@ -1,0 +1,3 @@
+BOT_NAME = 'transit_chat'
+SLACK_BOT_TOKEN = "BOT OAUTH TOKEN HERE"
+

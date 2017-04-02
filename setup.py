@@ -10,6 +10,7 @@ requires = [
     'ott.utils',
     'pyparsing',
     'psycopg2',
+    'slackclient',
     ''
 ]
 
