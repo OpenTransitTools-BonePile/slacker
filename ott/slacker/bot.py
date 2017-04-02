@@ -10,10 +10,13 @@ EXAMPLE_COMMAND = "do"
 
 
 class Bot(object):
-
+    """ a lot of code borrowed from fullstack article  
+        @see https://www.fullstackpython.com/blog/build-first-slack-bot-python.html
+    """
     def __init__(self):
         super(Bot, self).__init__()
         self.bot_id = self.get_bot_id()
+
 
     @classmethod
     def handle_command(cls, command, channel):
@@ -28,7 +31,7 @@ class Bot(object):
         slack_client.api_call("chat.postMessage", channel=channel, text=response, as_user=True)
 
     @classmethod
-    def parse_slack_output(cls, slack_rtm_output, at_bot):
+    def parse_slack_output(cls, slack_rtm_output, at_bot=AT_BOT):
         """
             The Slack Real Time Messaging API is an events firehose.
             this parsing function returns None unless a message is
