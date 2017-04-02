@@ -6,5 +6,6 @@ install:
   1. git clone https://github.com/OpenTransitTools/slacker.git
   1. cd slacker
   1. buildout
+  1. bin/python -m textblob.download_corpora
   1. edit security_keys.py
   1. git update-index --assume-unchanged security_keys.py

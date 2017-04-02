@@ -11,7 +11,7 @@ requires = [
     'pyparsing',
     'psycopg2',
     'slackclient',
-    ''
+    'textblob',
 ]
 
 extras_require = dict(
